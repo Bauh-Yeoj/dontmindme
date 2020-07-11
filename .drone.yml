@@ -3,12 +3,11 @@ type: docker
 name: ItsVixano-experiment
 
 steps:
-- name: Los-16
+- name: Reloaded-10
   image: ubuntu:18.04
   commands:
   - "apt-get -y update && apt-get -y upgrade && apt-get -y install sudo && apt-get -y install curl libxml-simple-perl apt-utils texinfo unzip w3m xsltproc zip zlib1g-dev lzip pngquant python2.7 python-all-dev re2c schedtool squashfs-tools subversion maven ncftp ncurses-dev patch patchelf pkg-config pngcrush libsdl1.2-dev libssl-dev libtool libxml2 libxml2-utils lzop libmpc-dev libmpfr-dev libncurses5-dev libexpat1-dev libgmp-dev htop imagemagick lib32ncurses5-dev lib32z1-dev libtinfo5 libc6-dev libcap-dev g++-multilib gawk gcc gcc-multilib git gnupg gperf ccache clang cmake expat fastboot flex g++ adb autoconf automake axel bc bison build-essential"
   - "apt-get -y install openjdk-8-jre"
   - "apt-get -y install openjdk-8-jdk"
-  - "apt-get -y install imagemagick"
   - "bash repo.sh"
-  - "bash los16.sh"
+  - "bash reloadQ.sh"
