@@ -14,7 +14,7 @@ repo sync -c --force-sync --no-tags --no-clone-bundle -j$(nproc --all) --optimiz
 
 git clone https://github.com/GuaiYiHu/android_vendor_xiaomi_whyred-oss --depth=1 -b mkp vendor/xiaomi/whyred
 git clone https://github.com/GuaiYiHu/android_kernel_xiaomi_whyred --depth=1 -b mkp-new kernel/xiaomi/whyred
-git clone https://github.com/shekhawat2/android_device_xiaomi_whyred-1 --depth=1 -b lineage-16.0 device/xiaomi/whyred
+git clone https://github.com/ItsVixano/android_device_xiaomi_whyred-oss --depth=1 -b lineage-16.0 device/xiaomi/whyred
 
 #compiling los
 
