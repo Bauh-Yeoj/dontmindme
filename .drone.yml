@@ -10,4 +10,4 @@ steps:
   - "apt-get -y install openjdk-8-jre"
   - "apt-get -y install openjdk-8-jdk"
   - "bash repo.sh"
-  - "bash build.sh"
+  - "bash aosip.sh"
