@@ -18,9 +18,10 @@ git clone https://github.com/bacon-dev/android_vendor_oneplus -b ten --depth=1 v
 git clone https://github.com/bacon-dev/prebuilts_gcc_linux-x86_arm_arm-eabi-linaro-7 --depth=1 prebuilts/gcc/linux-x86/arm/arm-eabi-linaro-7
 
 # Compiling BluidOS
-mka clean
 . build/envsetup.sh
-brunch bacon
+mka clean
+lunch aosip_bacon-userdebug
+mka kronic
 
 # Upload the build
 export BUILDFILE=$(find $(pwd)/out/target/product/bacon/AOSiP-*.zip)
