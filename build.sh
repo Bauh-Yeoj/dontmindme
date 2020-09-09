@@ -23,6 +23,6 @@ mka clean
 brunch bacon
 
 # Upload the build
-export BUILDFILE=$(find $(pwd)/out/target/product/bacon/FluidOS-*.zip
-curl --upload-file $BUILDFILE https://transfer.sh/
+export BUILDFILE=$(find $(pwd)/out/target/product/bacon/Fluid-*.zip)
+curl -F'file=$BUILDFILE' https://0x0.st
 exit
