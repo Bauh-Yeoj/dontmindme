@@ -25,7 +25,7 @@ git clone https://github.com/ItsVixano/android_vendor_xiaomi_whyred --single-bra
 # Compiling LOS THE GAMING ROM
 rm -rf .repo
 source build/envsetup.sh
-make clean
+mka clean
 lunch lineage_whyred-user
 mka bacon -j$(nproc --all)
 
