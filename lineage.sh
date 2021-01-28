@@ -7,6 +7,12 @@ git config --global user.name Bauh-Yeoj
 git config --global user.email Devolutiony@yandex.com
 git config --global color.ui false
 
+# setup repo
+mkdir ~/bin
+PATH=~/bin:$PATH
+curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
+chmod a+x ~/bin/repo
+
 # Sync LOS THE BAST 
 python3 ~/bin/repo init -u git://github.com/LineageOS/android.git -b lineage-17.1 --depth=1
 python3 ~/bin/repo sync --force-sync --no-tags --no-clone-bundle -j$(nproc --all)
