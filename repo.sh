@@ -2,7 +2,5 @@
 
 mkdir ~/bin
 PATH=~/bin:$PATH
-curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
+curl https://storage.googleapis.com/git-repo-downloads/repo-1 > ~/bin/repo
 chmod a+x ~/bin/repo
-
-apt-get -y install repo

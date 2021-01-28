@@ -8,8 +8,8 @@ git config --global user.email Devolutiony@yandex.com
 git config --global color.ui false
 
 # Sync LOS THE BAST 
-repo init -u git://github.com/LineageOS/android.git -b lineage-17.1 --depth=1
-repo sync --force-sync --no-tags --no-clone-bundle -j$(nproc --all)
+python3 ~/bin/repo init -u git://github.com/LineageOS/android.git -b lineage-17.1 --depth=1
+python3 ~/bin/repo sync --force-sync --no-tags --no-clone-bundle -j$(nproc --all)
 
 # Cloning device sources
 git clone https://github.com/Bauh-Yeoj/kranul --single-branch --depth=1 kernel/xiaomi/whyred
